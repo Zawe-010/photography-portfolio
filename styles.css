@@ -65,7 +65,7 @@ header p {
 
 /* Biography Section */
 .bio {
-    background-color: #fff;
+    background-color: #cfcccc;
     padding: 2.5rem;
     margin: 2rem 0;
     border-radius: 8px;
@@ -102,7 +102,7 @@ header p {
 }
 
 .member {
-    background-color: #f9f9f9;
+    background-color: #cfcccc;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -138,7 +138,7 @@ header p {
 /* Services Section */
 .services {
     padding: 2.5rem;
-    background-color: #f9f9f9;
+    background-color: #cfcccc;
     margin: 2rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -205,7 +205,7 @@ header p {
 /* Photo Gallery Section */
 .photo-gallery {
     padding: 2.5rem;
-    background-color: #ffffff;
+    background-color: #cfcccc;
     margin: 2rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -255,7 +255,7 @@ header p {
 /* Testimonials Section */
 .testimonials {
     padding: 3rem;
-    background-color: #fdfdfd;
+    background-color: #cfcccc;
     margin: 2rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -317,7 +317,7 @@ header p {
 /* Contact Form Section */
 .contact {
     padding: 3rem;
-    background-color: #fff;
+    background-color: #cfcccc;
     margin: 2rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
