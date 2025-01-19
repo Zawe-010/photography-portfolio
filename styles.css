@@ -95,9 +95,8 @@ header p {
 
 /* Team Members Section */
 .team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     text-align: center;
 }
@@ -107,8 +106,6 @@ header p {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-basis: 30%;
-    text-align: center;
 }
 
 .member-photo {
@@ -205,6 +202,7 @@ header p {
     border-color: #600594;
 }
 
+
 /* Photo Gallery Section */
 .photo-gallery {
     padding: 2.5rem;
@@ -224,16 +222,14 @@ header p {
 }
 
 .photo-gallery ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    justify-content: center;
 }
 
 .photo-gallery li {
     list-style-type: none;
     text-align: center;
-    flex-basis: 30%;
 }
 
 .photo-gallery img {
@@ -344,14 +340,7 @@ header p {
     color: #000000;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .form-group {
-    width: 100%;
     margin-bottom: 1.5rem;
 }
 
@@ -360,7 +349,7 @@ label {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: #000000;
-    font-weight: bold;
+    font-weight: bold
 }
 
 input,
@@ -391,7 +380,7 @@ button.submit-button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-weight: bold;
+    font-weight: bold
 }
 
 button.submit-button:hover {
@@ -425,8 +414,6 @@ footer p {
 @media (max-width: 768px) {
     .team-members {
         grid-template-columns: repeat(2, 1fr);
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .services {
@@ -434,21 +421,20 @@ footer p {
     }
 
     .service-item {
+        /* Allow service items to adapt to smaller screens */
         flex: 0 0 48%;
+        /* Two items per row */
         margin-bottom: 1.5rem;
     }
 
     .service-image {
         height: 200px;
+        /* Adjust height for smaller screens */
     }
+
 
     .photo-gallery ul {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .photo-gallery li {
-        flex-basis: 48%;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .testimonials blockquote {
@@ -485,8 +471,6 @@ footer p {
 
     .team-members {
         grid-template-columns: 1fr;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .services h2 {
@@ -494,12 +478,14 @@ footer p {
     }
 
     .service-item {
+        /* Ensure each item takes up full width on small screens */
         flex: 0 0 100%;
         margin-bottom: 1rem;
     }
 
     .service-image {
         height: 180px;
+        /* Adjust height for even smaller screens */
     }
 
     .services h2,
@@ -511,12 +497,7 @@ footer p {
     }
 
     .photo-gallery ul {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .photo-gallery li {
-        flex-basis: 100%;
+        grid-template-columns: 1fr;
     }
 
     .testimonials blockquote p {
@@ -551,4 +532,4 @@ h5:hover,
 h6:hover {
     border-bottom: 2px solid #600594;
     padding-bottom: 0.2rem;
-}
+    }
